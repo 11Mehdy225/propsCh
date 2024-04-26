@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PlayersList from "./composants/PlayersList";
+import './App.css'
+// import trophe from './trophe.png'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Les Nominés au prix The Best UEFA</h1>
+      <img src='/trophe.png' alt="tro" className="trophe"/>
+      <PlayersList/>
     </div>
   );
-}
+};
 
 export default App;
